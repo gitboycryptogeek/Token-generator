@@ -1,70 +1,172 @@
-# Getting Started with Create React App
+# Token Launcher 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Token Launcher is a decentralized token creation and trading platform built on the Solana blockchain. This web application allows users to create, explore, and interact with custom tokens seamlessly through a user-friendly interface.
 
-In the project directory, you can run:
+![Project Banner](path/to/banner-image.png)
 
-### `npm start`
+## 🌟 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Wallet Integration
+- Connect with Phantom Wallet
+- View wallet balance
+- Manage wallet connection
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Token Creation
+- Create custom tokens with detailed configurations
+- Set token parameters:
+  - Name
+  - Symbol
+  - Total Supply
+  - Decimals
+  - Initial Price
+- Automatic liquidity pool creation on Orca Whirlpools
+- Instant token minting
 
-### `npm test`
+### 3. Token Exploration
+- Browse trending and newest tokens
+- Detailed token information pages
+- Real-time price charts
+- Order book visualization
+- Community comments
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Tech Stack
 
-### `npm run build`
+### Frontend
+- React.js
+- React Router
+- Tailwind CSS
+- React Hot Toast
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Blockchain Integration
+- Solana Web3.js
+- Orca Whirlpools SDK
+- Metaplex Token Metadata
+- SPL Token
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### State Management
+- React Hooks
+- Context API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
+- Node.js (v16+)
+- npm or Yarn
+- Phantom Wallet Browser Extension
+- Solana Wallet with SOL for transactions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/token-launcher.git
+cd token-launcher
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Environment Configuration
+- Create a `.env` file in the project root
+- Add any necessary environment variables (if applicable)
 
-## Learn More
+4. Start the development server
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+token-launcher/
+│
+├── public/                 # Static assets
+├── src/
+│   ├── App.js              # Main application component
+│   ├── components.jsx      # Reusable UI components
+│   ├── index.js            # Entry point
+│   ├── page.jsx            # Page components
+│   ├── utils.jsx           # Utility functions and wallet context
+│   └── index.css           # Tailwind CSS base styles
+│
+├── tailwind.config.js      # Tailwind CSS configuration
+└── package.json            # Project dependencies and scripts
+```
 
-### Code Splitting
+## 🔐 Wallet Connection
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application uses Phantom Wallet for Solana blockchain interactions. Ensure you:
+- Have the Phantom Wallet browser extension installed
+- Have SOL in your wallet for transaction fees
 
-### Analyzing the Bundle Size
+## 💡 Token Creation Process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Connect your Solana wallet
+2. Navigate to "Create Token"
+3. Fill in token details
+4. Review and confirm transaction fees
+5. Create your token with initial liquidity
 
-### Making a Progressive Web App
+### Fees Breakdown
+- Platform Fee: 0.02 SOL
+- Estimated Gas: 0.01 SOL
+- Initial Liquidity: Calculated based on token supply and initial price
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧪 Testing
 
-### Advanced Configuration
+### Development Testing
+- Ensure you're using a Solana devnet or testnet for initial testing
+- Have test SOL in your wallet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Recommended Test Scenarios
+- Token creation with various parameters
+- Wallet connection/disconnection
+- Liquidity pool interactions
+- Comment system functionality
 
-### Deployment
+## ⚠️ Known Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Connects directly to Solana mainnet
+- Limited wallet provider support
+- Potential high transaction costs
+- Minimal error handling for blockchain interactions
 
-### `npm run build` fails to minify
+## 🔧 Potential Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add testnet/devnet support
+- Implement more robust error handling
+- Support multiple wallet providers
+- Add comprehensive input validation
+- Implement caching mechanisms
+- Enhance user feedback during transactions
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 💬 Support
+
+For issues and questions, please open a GitHub issue or contact [Your Contact Information].
+
+## 🙏 Acknowledgments
+
+- Solana Blockchain
+- Orca Whirlpools
+- Metaplex
+- React Community
+
+---
+
+**Disclaimer**: This project is experimental. Use at your own risk and always do your own research before creating or trading tokens.
